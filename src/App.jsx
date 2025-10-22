@@ -6,7 +6,7 @@ export default function App() {
 
   useEffect(() => {
     const toggleUI = (e) => {
-      if (e.key.toLowerCase() === 'h') setHideUI(prev => !prev)
+      if (e.key.toLowerCase() === 'h') setHideUI(p => !p)
     }
     window.addEventListener('keydown', toggleUI)
     return () => window.removeEventListener('keydown', toggleUI)
